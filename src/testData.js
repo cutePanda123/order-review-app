@@ -1,0 +1,18 @@
+export const orders = [
+    {
+        id: 1,
+        name: 'Spicy Crab Salad',
+        seller: 'Just Poké',
+        imgUrl: 'https://s3-media0.fl.yelpcdn.com/bphoto/xxqdw86CN-JaeoJUlgLudQ/o.jpg',
+        price: 20,
+        isCommented: true
+    },
+    {
+        id: 2,
+        name: 'Grand Salami',
+        seller: 'Zeeks Pizza',
+        imgUrl: 'https://s3-media0.fl.yelpcdn.com/bphoto/3yTAiG-fFbmiYnnOHuoKQQ/o.jpg',
+        price: 15,
+        isCommented: false
+    }
+];
