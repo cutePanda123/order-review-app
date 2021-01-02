@@ -31,6 +31,7 @@ class OrderList extends Component {
                                 <OrderItem
                                     key={order.id}
                                     data={order}
+                                    onSubmitReview={this.handleSubmitReview}
                                 />
                             );
                         })
@@ -40,6 +41,25 @@ class OrderList extends Component {
                     <div></div>
                 )
         );
+    }
+
+    handleSubmitReview = (id, reviewComment, starsNumber) => {
+        // in real case situation, the below codes should be added as the callback in fetch('/savecomment').then(() => {})
+        const newOrders = this.state.orders.map((order, index) => {
+            if (order.id === id) {
+                return {
+                    ...order,
+                    reviewComment,
+                    starsNumber,
+                    isCommented: true
+                };
+            } else {
+                return order;
+            }
+        });
+        this.setState({
+            orders: newOrders
+        });
     }
 }
 

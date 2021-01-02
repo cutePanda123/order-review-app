@@ -5,7 +5,9 @@
         "seller": "Just Poké",
         "imgUrl": "https://s3-media0.fl.yelpcdn.com/bphoto/xxqdw86CN-JaeoJUlgLudQ/o.jpg",
         "price": 20,
-        "isCommented": true
+        "isCommented": true,
+        "reviewComment": "it tastes really good!",
+        "starsNumber": 4
     },
     {
         "id": 2,
